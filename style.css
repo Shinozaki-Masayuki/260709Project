@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 24px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tagline {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #555555;
+  margin-bottom: 32px;
+}
+
+.members {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.members li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #111111;
+  text-decoration: none;
+}
+
+.members li img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+
+.members li a:hover img {
+  filter: grayscale(0%);
+}
+
+.members li span {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.members li a:hover span {
+  border-color: #111111;
+}
+
+.event {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 24px 0;
+  margin-bottom: 40px;
+}
+
+.event-date {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.event-title {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.event-place {
+  font-size: 13px;
+  color: #555555;
+  letter-spacing: 0.05em;
+}
+
+.sns-links {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.sns-links a {
+  color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.sns-links svg {
+  width: 26px;
+  height: 26px;
+}
+
+.sns-links a:hover {
+  opacity: 0.5;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 11px;
+  color: #999999;
+  letter-spacing: 0.05em;
+}
